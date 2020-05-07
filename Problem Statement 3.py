@@ -1,4 +1,4 @@
-#Please first install pip-packages
+#Please first install pip-packages extension
 
 from win32com.client import Dispatch
 import pandas as pd
