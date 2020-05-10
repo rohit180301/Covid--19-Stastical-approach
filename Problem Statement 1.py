@@ -11,8 +11,8 @@ confirmed_countries_list =  confirmed['Country/Region'].values.tolist()
 confirmed_list =  confirmed.values.tolist()
 deaths_list =  deaths.values.tolist()
 
-# If any country has its data according to state wise then,these function will sum all state data in one country
-confirmed = confirmed.groupby(confirmed['Country/Region']).aggregate('sum')
+# If any country has its data according to state wise then,these function will sum all states data of that country in one
+confirmed = confirmed.groupby(confirmed['Country/Region']).aggregate('sum') 
 deaths = deaths.groupby(deaths['Country/Region']).aggregate('sum')
 
 # Here we transpose the data file
