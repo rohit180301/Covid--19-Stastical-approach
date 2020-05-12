@@ -3,8 +3,7 @@
 from win32com.client import Dispatch
 import pandas as pd
 import csv
-lst=[]
-lst1=[]
+
 def speak(str):
     speak=Dispatch("SAPI.SPVoice")
     speak.Speak(str)
@@ -76,7 +75,7 @@ while(c==1):
         speak("Press 0 to again loop into same country else press any number key to terminate the program : ")
         p=int(input("Press 0 to again loop into same country else press any number key to terminate the program : "))
     speak("Press 1 to loop into other country else press any key to terminate the program : ")
-    c=int(input("Press 1 to again loop into other country else press any number key to terminate the program : "))
+    c=int(input("Press 1 to loop into other country else press any number key to terminate the program : "))
  
 
 
