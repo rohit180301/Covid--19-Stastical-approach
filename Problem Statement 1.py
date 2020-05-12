@@ -52,7 +52,7 @@ plt.show()
 # Making list of High risk countries 
 High_risk_Countries =[]
 d = float(input("Enter the Death_growing_rate for which, you mark the country as the high risk country : "))
-for i in range(1,len(confirmed_list)) :
+for i in range(0,len(confirmed_list)) :
     P = confirmed_list[i]
     D = deaths_list[i]
     C = confirmed_countries_list[i]
